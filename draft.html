@@ -7,26 +7,44 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Weather App DRAFT 🌞</title>
+    <link
+      rel="stylesheet"
+      href="src/draft.css"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" />
-        <input type="submit" />
-      </form>
-    </header>
-    <main>
-      <div class="city">Bordeaux</div>
-      <div class="current-weather">🌥️ 17°C</div>
-
-      <div class="current-weather-details">
-        Monday 17:05, cloudy <br />
-        Humidity: 86%, Wind: 9.5km/h
-      </div>
-    </main>
-    <footer>
-      This project was coded by Jamie Leigh, is open-sourced on GitHub and
-      hosted on Netlify
-    </footer>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            type="search"
+            class="search-bar"
+            placeholder="Enter city..."
+          />
+          <input
+            type="submit"
+            class="submit-button"
+            value="Search"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="current-city-and-weather">
+          <div class="current-city">Bordeaux</div>
+          <div class="current-weather">
+            <div class="current-emoji">🌥️</div>
+            <div class="current-temperature">17</div>
+            <div class="current-unit">°C</div>
+          </div>
+        </div>
+        <div class="current-weather-details">
+          Monday 17:05, cloudy <br />
+          Humidity: <strong>86</strong>%, Wind: <strong>9.5</strong>km/h
+        </div>
+      </main>
+      <footer>
+        Coded by Jamie Leigh | Open-sourced on GitHub | Hosted on Netlify
+      </footer>
+    </div>
   </body>
 </html>
