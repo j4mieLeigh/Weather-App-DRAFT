@@ -38,7 +38,7 @@ a {
   padding: 30px;
 }
 
-.search-bar {
+.search-input {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
@@ -78,6 +78,7 @@ a {
 
 .current-emoji {
   font-size: 48px;
+  margin-top: 10px;
 }
 
 .current-temperature {

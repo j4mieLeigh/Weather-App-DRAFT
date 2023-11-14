@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Weather App DRAFT 🌞</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       href="src/draft.css"
@@ -15,31 +16,55 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
-            class="search-bar"
+            class="search-input"
+            id="search-input"
             placeholder="Enter city..."
           />
           <input
             type="submit"
             class="submit-button"
+            id="submit-button"
             value="Search"
           />
         </form>
       </header>
       <main>
         <div class="current-city-and-weather">
-          <div class="current-city">Bordeaux</div>
+          <div
+            class="current-city"
+            id="current-city"
+          ></div>
           <div class="current-weather">
-            <div class="current-emoji">🌥️</div>
-            <div class="current-temperature">17</div>
-            <div class="current-unit">°C</div>
+            <div
+              class="current-emoji"
+              id="current-emoji"
+            >
+              🌥️
+            </div>
+            <div
+              class="current-temperature"
+              id="current-temperature"
+            ></div>
+            <div
+              class="current-unit"
+              id="current-unit"
+            >
+              °C
+            </div>
           </div>
         </div>
-        <div class="current-weather-details">
-          Monday 17:05, cloudy <br />
-          Humidity: <strong>86</strong>%, Wind: <strong>9.5</strong>km/h
+        <div
+          class="current-weather-details"
+          id="current-weather-details"
+        >
+          <span id="day"></span> <span id="time"></span>,
+          <span id="current-condition"></span>
+          <br />
+          Humidity: <strong id="current-humidity"></strong>%, Wind:
+          <strong id="current-wind"></strong>km/h
         </div>
       </main>
       <footer>
@@ -63,5 +88,6 @@
         >
       </footer>
     </div>
+    <script src="src/draft.js"></script>
   </body>
 </html>
