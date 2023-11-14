@@ -6,6 +6,7 @@ body {
 
 header {
   border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 20px 0;
 }
 
 form {
@@ -15,6 +16,7 @@ form {
 
 footer {
   border-top: 1px solid #f9f7fe;
+  color: rgba(0, 0, 0, 0.735);
   font-size: 14px;
   padding: 20px 0 0 0;
   text-align: center;
@@ -65,6 +67,7 @@ a {
 .current-city {
   font-size: 36px;
   font-weight: bold;
+  padding: 20px 0 0 0;
 }
 
 .current-weather {
@@ -83,7 +86,8 @@ a {
 }
 
 .current-unit {
-  font-size: 36px;
+  font-size: 32px;
+  margin-top: 10px;
 }
 
 .current-weather-details {
