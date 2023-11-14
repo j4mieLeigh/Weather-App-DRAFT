@@ -77,8 +77,9 @@ a {
 }
 
 .current-emoji {
-  font-size: 48px;
+  height: 88px;
   margin-top: 10px;
+  width: 88px;
 }
 
 .current-temperature {
