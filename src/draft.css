@@ -97,3 +97,25 @@ a {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+
+.forecast {
+  color: black;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.forecast-temps {
+  font-size: 13px;
+}
+
+.max-temp {
+}
+
+.min-temp {
+  opacity: 0.5;
+}
