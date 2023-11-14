@@ -23,6 +23,11 @@ footer {
 strong {
   color: #f75282;
 }
+
+a {
+  color: #885df1;
+}
+
 .container {
   background: white;
   border-radius: 20px;
