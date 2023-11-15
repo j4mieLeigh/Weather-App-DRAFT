@@ -20,6 +20,8 @@ function updateWeather(response) {
       class="current-emoji"
       id="current-emoji"
     />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -55,7 +57,15 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "5do93bc0b836c98t67cd86dfeaa4ff3f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
 
   let forecastHtml = "";
@@ -87,4 +97,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmit);
 
 searchCity("Bordeaux");
-displayForecast();
