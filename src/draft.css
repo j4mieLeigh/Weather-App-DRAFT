@@ -102,17 +102,23 @@ a {
   display: flex;
   justify-content: space-around;
   color: black;
-  margin: 50px 0;
-  text-align: center;
+  margin: 60px 0;
 }
 
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
+  text-align: center;
+}
+
+.weather-forecast-icon img {
+  text-align: center;
+  width: 85px;
 }
 
 .weather-forecast-temperatures {
   font-size: 13px;
+  text-align: center;
 }
 
 .max-temp {
