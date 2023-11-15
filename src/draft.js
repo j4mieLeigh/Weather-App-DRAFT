@@ -55,7 +55,36 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
+
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="weather-forecast-day">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvkh118n2ub-5tCEjQ3rtZWm72TUP_tOj41g&usqp=CAU"
+        height="50"
+        width="50"
+      />
+      <div class="weather-forecast-temperatures">
+        <span class="max-temp">18°</span>
+        <span class="min-temp">12°</span>
+      </div>
+   </div>
+   `;
+  });
+
+  let forecastElement = document.querySelector("#weather-forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmit);
 
 searchCity("Bordeaux");
+displayForecast();

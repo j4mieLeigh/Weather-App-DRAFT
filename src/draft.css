@@ -98,24 +98,28 @@ a {
   margin-bottom: 30px;
 }
 
-.forecast {
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
   color: black;
-  margin: 30px 0;
+  margin: 50px 0;
   text-align: center;
 }
 
-.forecast-day {
+.weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
 }
 
-.forecast-temps {
+.weather-forecast-temperatures {
   font-size: 13px;
 }
 
 .max-temp {
+  color: #f75282;
 }
 
 .min-temp {
-  opacity: 0.5;
+  color: #f75282;
+  opacity: 0.7;
 }
